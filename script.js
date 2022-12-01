@@ -1,10 +1,11 @@
 (function(){
     let screen = document.querySelector('.screen');
-    let buttons = document.querySelectorAll('.btn');
+    let buttons = document.querySelectorAll('.btn-opr');
     let clear = document.querySelector('.btn-clear');
     let equal = document.querySelector('.btn-equal');
 
     buttons.forEach(function(button){
+        console.log("Each........")
         button.addEventListener('click', function(e){
             let value = e.target.dataset.num;
             screen.value += value;
